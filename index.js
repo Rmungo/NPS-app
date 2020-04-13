@@ -50,13 +50,11 @@ function showParks(x){
         $('.parks').append(`<li><b>${x.data[i]["fullName"]}</b> 
         <p>${x.data[i]["description"]}</p>
         <a href="${x.data[i]["url"]}">https://www.nps.gov/cali/index.htm</a>
+        <p>${x.data[i]["addresses"][0].postalCode}${x.data[i]["addresses"][0].city}
+        ${x.data[i]["addresses"][0].stateCode}${x.data[i]["addresses"][0].line1}</p>
         </li>`)
     }
 }
-
-
-// <p>${x.data[i]["addresses"][0].postalCode}${x.data[i]["addresses"][0].city}
-//         ${x.data[i]["addresses"][0].stateCode}${x.data[i]["addresses"][0].line1}
 
 
 
